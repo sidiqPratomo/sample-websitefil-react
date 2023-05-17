@@ -4,27 +4,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const TesApi = () => {
-  // const options = {
-  //     method: 'GET',
-  //     url: 'https://imdb-top-100-movies.p.rapidapi.com/',
-  //     headers: {
-  //       'X-RapidAPI-Key': '355be080ecmsha29e23733f4f317p1ad8b6jsn910c411a25c2',
-  //       'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
-  //     }
-  //   };
-
-  //   axios.request(options).then(function (response) {
-  //     console.log(response.data);
-  //   }).catch(function (error) {
-  //     console.error(error);
-  //   });
 
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     axios
       .get(`https://imdb-top-100-movies.p.rapidapi.com/`, {
         headers: {
-          "X-RapidAPI-Key": "355be080ecmsha29e23733f4f317p1ad8b6jsn910c411a25c2",
+          "X-RapidAPI-Key": "YOUR TOKEN",
           "X-RapidAPI-Host": "imdb-top-100-movies.p.rapidapi.com",
         },
       })
