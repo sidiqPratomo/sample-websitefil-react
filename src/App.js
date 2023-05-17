@@ -4,6 +4,7 @@ import "./style/LandingPage.css";
 import Intro from "./component/Intro";
 import Trending from "./component/Trending";
 import Hero from "./component/Hero";
+import TesApi from "./component/TesApi";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Intro />
       </div>
       <div className="trending">
-        <Trending />
+        <TesApi />
       </div>
       <div className="hero">
         <Hero />
